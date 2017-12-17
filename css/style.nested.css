@@ -679,7 +679,7 @@ Mobile Menu
     margin-top: -63px; }
 
 /**********************************
-Layouts
+Main
 **********************************/
 #scorpius-feature {
   background: #ffffff;
@@ -784,6 +784,9 @@ body.inner-page #scorpius-main {
       margin-top: 0px;
       padding-top: 20px; } }
 
+/**********************************
+Testimonial
+**********************************/
 #scorpius-testimonial {
   padding: 120px 0;
   background: #000 url(../images/hero2.jpg) no-repeat center center;
@@ -821,10 +824,73 @@ body.inner-page #scorpius-main {
   #scorpius-newsletter .scorpius-uppercase-heading-sm {
     color: rgba(0, 0, 0, 0.4); }
 
+/**********************************
+Contact
+**********************************/
 #scorpius-contact {
   background-color: #ccc;
   padding: 5em 0 2em 0; }
 
+#scorpius-contact .contact-item {
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #223a5e;
+  border-radius: 4px; }
+
+#scorpius-contact .contact-item p {
+  word-wrap: break-word;
+  margin: 0; }
+
+#scorpius-contact h3 {
+  font-size: 1.5em;
+  margin-top: 40px;
+  text-transform: uppercase; }
+
+#scorpius-contact form {
+  padding: 30px 0; }
+
+#scorpius-contact i {
+  font-size: 22px;
+  color: #223a5e;
+  margin-bottom: 10px; }
+
+#scorpius-contact .text-danger {
+  color: #ff3333;
+  text-align: left; }
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; }
+
+#scorpius-contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  transition: none; }
+
+#scorpius-contact .form-control:focus {
+  border-color: inherit;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent; }
+
+/**********************************
+Footer
+**********************************/
 #scorpius-footer {
   color: #ccc;
   background-color: #2e2e2e;
@@ -1388,7 +1454,9 @@ Components
   background: #ffd042; }
 
 .btn-alt {
-  color: #ccc; }
+  color: #ccc !important; }
+  .btn-alt:hover {
+    color: #ccc !important; }
 
 .btn-primary,
 .btn-success,
@@ -1706,7 +1774,6 @@ Components
   margin: 0 0 2em 0; }
   .scorpius-social-icons li {
     list-style: none;
-    display: inline;
     display: inline-block; }
     .scorpius-social-icons li a {
       color: #f1d1bc;

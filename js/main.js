@@ -2,14 +2,6 @@
 
 	'use strict';
 
-	// start scorpius-loader
-	$(document).ready(function() {
-		setTimeout(function(){
-			$('body').addClass('loaded');
-			// $('h1').css('color','#222222');
-		}, 500);
-	});
-
 	// iPad and iPod detection
 	var isiPad = function(){
 	  return (navigator.platform.indexOf("iPad") != -1);

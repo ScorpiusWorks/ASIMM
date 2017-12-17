@@ -812,7 +812,7 @@ Mobile Menu
 
 
 /**********************************
-Layouts
+Main
 **********************************/
 #scorpius-feature {
 	background: $brand-white;
@@ -946,6 +946,12 @@ body {
 	}
 }
 
+
+
+/**********************************
+Testimonial
+**********************************/
+
 #scorpius-testimonial {
 	padding: 120px 0;
 	background: #000 url(../images/hero2.jpg) no-repeat center center;
@@ -993,10 +999,106 @@ body {
 
 }
 
+
+
+/**********************************
+Contact
+**********************************/
+
 #scorpius-contact {
 	background-color: $brand-gray;
 	padding: 5em 0 2em 0;
 }
+
+#scorpius-contact .contact-item {
+	padding: 10px;
+	margin: 10px;
+	height: auto;
+	background: $brand-white;
+	border: 1px solid $brand-primary;
+	border-radius: 4px;
+}
+
+#scorpius-contact .contact-item p {
+  word-wrap: break-word;
+	margin: 0;
+}
+
+#scorpius-contact h3 {
+	font-size: 1.5em;
+	margin-top: 40px;
+  text-transform: uppercase;
+}
+#scorpius-contact form {
+	padding: 30px 0;
+}
+#scorpius-contact i {
+	font-size: 22px;
+	color: $brand-primary;
+	margin-bottom: 10px;
+}
+#scorpius-contact .text-danger {
+	color: #ff3333;
+	text-align: left;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+#scorpius-contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	transition: none;
+}
+#scorpius-contact .form-control:focus {
+	border-color: inherit;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+// #scorpius-contact .btn-default {
+// 	background: #bb0000;
+// 	border: 0;
+// 	border-radius: 4px;
+// 	padding: 6px 14px;
+// 	color: white;
+// 	margin-top: 15px;
+// 	font-size: 15px;
+//   -webkit-transition: all 0.3s ease-in-out;
+//   transition: all 0.3s ease-in-out;
+// }
+// #scorpius-contact .btn-default:hover, #scorpius-contact .btn-default:focus {
+// 	color: white;
+// 	background: black;
+// }
+// .btn:active, .btn.active {
+// 	background-image: none;
+// 	outline: 0;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+// 	outline: none;
+// 	outline-offset: none;
+// }
+
+
+/**********************************
+Footer
+**********************************/
 
 #scorpius-footer {
 	color: $brand-gray;
@@ -1749,7 +1851,10 @@ Components
 	background: $brand-warning;
 }
 .btn-alt {
-	color: $brand-gray;
+	color: $brand-gray !important;
+	&:hover {
+		color: $brand-gray !important;
+	}
 }
 .btn-primary,
 .btn-success,
@@ -2118,7 +2223,6 @@ Components
 	margin: 0 0 2em 0;
 	li {
 		list-style: none;
-		display: inline;
 		display: inline-block;
 		a {
 			color: $brand-secondary;
