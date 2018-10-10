@@ -231,8 +231,8 @@
   $(function() {
 
       //set your google maps parameters
-      var latitude = 46.205567,
-          longitude = 21.274780,
+      var latitude = 46.179549,
+          longitude = 21.322779,
           map_zoom = 17;
 
       //google map custom marker icon - .png fallback for IE11
@@ -486,6 +486,9 @@
 	// Slick Slider ini
   $('.scorpius-clients-slider').slick({
 			lazyLoad: 'ondemand',
+			centerMode: true,
+			padding: '120px',
+			//variableWidth: true,
 			slidesToShow: 4,
 		  slidesToScroll: 1,
 		  autoplay: true,
@@ -496,8 +499,8 @@
 			      settings: {
 			        slidesToShow: 3,
 			        slidesToScroll: 1,
-			        infinite: true,
-			        dots: true
+			        //infinite: true,
+			        //dots: true
 			      }
 			    },
 			    {
