@@ -460,9 +460,11 @@
       function CustomZoomControl(controlDiv, map) {
           //grab the zoom elements from the DOM and insert them in the map
           var controlUIzoomIn = document.getElementById('cd-zoom-in'),
-              controlUIzoomOut = document.getElementById('cd-zoom-out');
+              controlUIzoomOut = document.getElementById('cd-zoom-out'),
+							controlUInavigate = document.getElementById('cd-navigate');
           controlDiv.appendChild(controlUIzoomIn);
           controlDiv.appendChild(controlUIzoomOut);
+					controlDiv.appendChild(controlUInavigate);
 
           // Setup the click event listeners and zoom-in or out according to the clicked element
           google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
@@ -470,6 +472,9 @@
           });
           google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
               map.setZoom(map.getZoom() - 1)
+          });
+					google.maps.event.addDomListener(controlUInavigate, 'click', function() {
+              window.open("https://www.google.com/maps/dir/?api=1&destination=STANCIUEXPERT");
           });
       }
 

@@ -378,7 +378,7 @@ DESIGNED & DEVELOPED by SCORPIUSWORKS.COM
 								</div>
 								<div>
 									<a href="http://www.mobiliervlas.ro/" target="_blank">
-										<img data-lazy="/images/partners/logo-mobilier-vlas.png">
+										<img data-lazy="/images/partners/logo-mobilier-vlas.jpg">
 									</a>
 								</div>
 								<div>
@@ -460,6 +460,7 @@ DESIGNED & DEVELOPED by SCORPIUSWORKS.COM
                     <div id="google-container"></div>
                     <div id="cd-zoom-in"></div>
                     <div id="cd-zoom-out"></div>
+                    <div id="cd-navigate"></div>
                 </section>
             </div>
         	</div>
@@ -478,25 +479,32 @@ DESIGNED & DEVELOPED by SCORPIUSWORKS.COM
 
 							<div class="col-md-10 col-md-offset-1">
               <div class="col-md-4">
-                <div class="contact-item wow fadeInUp" data-wow-delay="0.25s">
-                  <i class="ti-location-pin"></i>
-                  <p>Str. Călugăreni nr.3 B - Arad, Romania</p>
-                </div>
+								<a href="https://www.google.com/maps/dir/?api=1&destination=STANCIUEXPERT" target="_blank">
+	                <div class="contact-item wow fadeInUp" data-wow-delay="0.25s">
+	                  <i class="ti-location-pin"></i>
+	                  <p>Str. Călugăreni nr.3 B - Arad, Romania</p>
+	                </div>
+								</a>
               </div>
               <div class="col-md-4">
-                <div class="contact-item wow fadeInUp" data-wow-delay="0.50s">
-                  <i class="ti-mobile"></i>
-                  <p>+40 357 410 471</p>
-                </div>
+								<a href="tel:+40357410471">
+	                <div class="contact-item wow fadeInUp" data-wow-delay="0.50s">
+										<i class="ti-mobile"></i>
+	                  <p>+40 357 410 471</p>
+	                </div>
+								</a>
               </div>
               <div class="col-md-4">
-                <div class="contact-item wow fadeInUp" data-wow-delay="0.75s">
-                  <i class="ti-email"></i>
-                  <p>office@stanciuexpert.ro</p>
-                </div>
+								<a href="mailto:office@stanciuexpert.ro">
+	                <div class="contact-item wow fadeInUp" data-wow-delay="0.75s">
+	                  <i class="ti-email"></i>
+	                  <p>office@stanciuexpert.ro</p>
+	                </div>
+								</a>
               </div>
               <div class="clearfix"></div>
             </div>
+
             <div class="col-md-10 col-md-offset-1">
               <h3 class="wow zoomIn text-center" data-wow-delay="0.5s">Lasă-ne un mesaj</h3>
               <form name="sentMessage" id="contactForm" novalidate class="wow fadeInUp" data-wow-delay="0.5s">
@@ -575,7 +583,7 @@ DESIGNED & DEVELOPED by SCORPIUSWORKS.COM
 							<li class="wow bounce" data-wow-delay="0.15s"><a href="#"><i class="ti-facebook"></i></a></li>
 							<li class="wow bounce" data-wow-delay="0.45s"><a href="#"><i class="ti-linkedin"></i></a></li>
 						</ul>
-						<p class="scorpius-no-margin-bottom text-center"><small>&copy; 2018 Stanciu Expert. All rights reserved.
+						<p class="scorpius-no-margin-bottom text-center"><small>&copy; 2017<script>document.write("-"+new Date().getFullYear());</script> Stanciu Expert. All rights reserved.
 						<br>
 						<em>Crafted with love by <a href="https://scorpiusworks.com" target="_blank">Scorpius Works</a></em></small></p>
 
@@ -617,10 +625,9 @@ DESIGNED & DEVELOPED by SCORPIUSWORKS.COM
 		<!-- Start the frontpage loader -->
 		<script type="text/javascript">
 			$(document).ready(function() {
-				// setTimeout(function(){
+				$(window).on("load", function (){
 					$('body').addClass('loaded');
-					// $('h1').css('color','#222222');
-				// }, 500);
+				})
 			});
 		</script>
 

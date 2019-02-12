@@ -892,26 +892,30 @@ Google Maps
   position: relative;
   padding: 0px; }
 
-#cd-zoom-in, #cd-zoom-out {
+#cd-zoom-in, #cd-zoom-out, #cd-navigate {
   height: 32px;
   width: 32px;
   cursor: pointer;
   margin-left: 10px;
   background-color: rgba(34, 58, 94, 0.9);
   background-repeat: no-repeat;
-  background-size: 32px 64px;
+  background-size: 32px 96px;
   background-image: url("../images/cd-icon-controller.svg"); }
 
-.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover, .no-touch #cd-navigate:hover {
   background-color: #223a5e; }
 
 #cd-zoom-in {
-  background-position: 50% 0;
+  background-position: 33% 0;
   margin-top: 10px;
   margin-bottom: 1px; }
 
 #cd-zoom-out {
-  background-position: 50% -32px; }
+  background-position: 33% -32px;
+  margin-bottom: 1px; }
+
+#cd-navigate {
+  background-position: 33% -64px; }
 
 /**********************************
 Clients Slider
